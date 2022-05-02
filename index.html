@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <script defer="" src="https://kit.fontawesome.com/e918d10e90.js" crossorigin="anonymous"></script>
+  <script defer src="/index.js"></script>
+  <title>Disney Info</title>
+</head>
+<body>
+      <section id="landing" class="white-color">
+      <!-- NAV -->
+      <nav>
+      <div class="site__logo">
+        <i class="fa-solid fa-crown"></i>
+        <h2>Disney Info</h2>
+      </div>
+      <ul class="nav__link">
+        <li><a href="#" class="nav__list">Home</a></li>
+        <li><a href="#" class="nav__list" id="about">About</a></li>
+      </ul>
+      </nav>
+
+      <!-- HEADER -->
+      <header>
+        <div class="header__content center-item">
+        <h1 id="appTitle">Information about Disney</h1>
+        <div class="form center-item">
+       <form id="infoForm">
+        <label>Search for your favourite Disney Characters </label>
+        <input type="text" name="search" id="info" placeholder="Aladdin, Rapunzel, Belle, etc...">
+        </form>
+     </div>
+     </div>
+    </header>
+
+  <!-- MODAL -->
+    <div class="modal" id="modal-container">
+      <div class="modal__content">
+        <span class="close__button white-color">&times;</span>
+        <h1 class="modal__title blue-color">About Disney Info</h1>
+        <p class="modal__desc"><b class="blue-color">Film Finder</b> is a random movie generator website that
+        generate a wide variety of genres through the use of TMDB API. The users can vote up or down based on the movie that
+       is displayed on the website.<br><br>Have fun generating and voting for movies! </p>
+      </div>
+    </div>
+  </section>
+
+<!-- INFORMATION -->
+   <section class='card'>
+     <div class="container">
+       <div class="row">
+      <div class='card-inner'>
+        <div class='card-front'>
+          <img src={item.img} alt='' />
+        </div>
+        <div class='card-back'>
+          <h1>{item.name}</h1>
+          <ul>
+            <li>
+              <strong>Actor Name:</strong> {item.portrayed}
+            </li>
+            <li>
+              <strong>Nickname:</strong> {item.nickname}
+            </li>
+            <li>
+              <strong>Birthday:</strong> {item.birthday}
+            </li>
+            <li>
+              <strong>Status:</strong> {item.status}
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      </div>
+    </section>
+</body>
+</html>
