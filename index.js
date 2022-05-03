@@ -20,6 +20,7 @@ function windowOnClick(e) {
   if (e.target === modal) toggleModal();
 }
 
+// Display API call function
 function showCharacter(data) {
   main.innerHTML = data
     .map(el => {
