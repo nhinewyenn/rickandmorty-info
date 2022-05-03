@@ -58,6 +58,7 @@ mainData();
 about.addEventListener('click', toggleModal);
 closeButton.addEventListener('click', toggleModal);
 window.addEventListener('click', windowOnClick);
+
 // Next page
 next.addEventListener('click', async () => {
   const res = await fetch(`${url}/?page=${counter++}`); // increment page
