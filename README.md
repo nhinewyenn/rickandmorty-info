@@ -26,5 +26,5 @@ A character information website using the Rick and Morty API to render data resu
 
 ## Screenshots
 
-![App Screenshot](/main.webp)
-![App Screenshot](/search.webp)
+![App Screenshot](/images/main.webp)
+![App Screenshot](/images/search.webp)
